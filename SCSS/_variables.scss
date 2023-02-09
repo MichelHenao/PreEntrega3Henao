@@ -1,0 +1,75 @@
+// Variables
+
+
+
+
+// para definir palestas de colores
+$colorheder: #333533;
+$colorletra1:black;
+$colorletra2:white;
+// colores paginas 
+$colormenu: #f3b5cb;
+$colorfavoritos:rgb(254,205,165) ;
+$colorcontacto: rgb(137, 237, 174) ;
+$colorequipo: #8ed1fc ;
+$colorneon: #e20019;
+$colorcard:white; 
+$colornegro: black;
+
+// para definir medidas
+$ancho: 720px;
+$alto: 720px;
+
+// tamaños de pantallas
+$movil:480px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXG: 1024px;
+
+// separaciones (margins y pading )
+$espacioxchico: 10px;
+$espaciochico:20px;
+$espaciomedio:40px;
+$espaciogrande:60px;
+$espaciogap: 2rem;
+
+// fuente,tamaño y ubicacion
+$fuenteprincipal:'Lato', sans-serif;
+$fuenteestilo: 'Barlow Condensed', sans-serif;
+$tamanotitulos:8rem;
+$tamanotexto:2rem;
+$tamanolistas:1.5rem;
+$alineaciontitulos:center;
+$alineaciontextos: justify;
+
+
+
+
+// MIXIN
+
+@mixin textos{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-family:'Lato', sans-serif ;
+}
+@mixin titulos{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif ;
+}
+
+
+@mixin flex-columna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin responsiv {
+    flex-direction: row ;
+    justify-content: space-around;
+
+}

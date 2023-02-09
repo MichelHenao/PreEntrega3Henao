@@ -1,0 +1,45 @@
+
+body{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+header{
+    font-family: $fuenteprincipal;
+    @include flex-columna;
+    gap: $espaciogap;
+    padding:$espaciomedio;
+    background-color:$colorheder;
+}
+    @media (min-width:$tablet) {
+
+        header{
+
+            display: flex;
+        flex-direction: row-reverse ;
+        justify-content: space-around;
+        }
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+
+button{
+    background-color: $colornegro;
+    color:$colorcard;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size: $tamanotexto;
+    font-family: $fuenteestilo;
+    width: 15rem;
+    height: 50px;}
+
+    button:hover {
+        background-color:white; 
+        color: black;
+    }
+

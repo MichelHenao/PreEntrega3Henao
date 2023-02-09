@@ -1,0 +1,63 @@
+
+.contenedor-contacto{
+    background-color:$colorcontacto;
+    width: 100%;
+    @include flex-columna;
+    color: $colorletra1;
+    position: relative;
+    }
+
+.mapa{
+    width:100%;
+}
+iframe{
+    width:100%;
+    height:90hv;
+    padding: 1rem;
+}
+.formulario{
+    position: absolute;
+    background-color:$colorcard;
+    width: 80%;
+    height: 65%;
+    padding: 1rem;
+    @include flex-columna;
+}
+
+.formulario-titulo{
+    @include titulos;
+    margin: 2.5rem auto;
+    border-radius: 5px;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+}
+.item-1{
+    width: 96%;
+    height: 45px;
+    margin: 7px auto;
+    outline: none;
+}
+
+
+textarea{
+     @extend .item-1;
+     resize:none ;
+ }
+
+.boton_enviar{
+     width: 50%;
+     height: 2rem;
+     margin: 1rem auto;
+     @include flex-columna;
+     outline: none;
+ }
+
+@media (min-width:$tablet) {
+    .formulario{
+        width: 30%;
+        height: 85%;
+    }
+}

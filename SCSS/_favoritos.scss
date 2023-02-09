@@ -1,0 +1,71 @@
+.contenedor_populares{
+    background-color:$colorfavoritos;
+    width: 100%;
+    color: $colorletra1;
+    }
+    
+    .titulo_populares{
+        @include titulos;
+        padding: $espaciochico; 
+    }
+    
+    .contenedor_paquetes{
+        width: 100%;
+        height: 70%;
+        @include flex-columna;
+        padding: $espaciomedio;
+    }
+    
+    .paquete{
+        background-color: white;
+        width: 80%;
+        height:80%;
+        border-radius: 2rem;
+        margin: 2rem;
+        @include flex-columna;
+    }
+    
+    .paquete h3 {
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    
+    .paquete h4 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    .paquete img{
+        object-fit: cover;
+    }
+    
+    .paquete p {
+        @include textos;
+    }
+    
+    .paquete a {
+         background-color:rgb(255, 182, 71);
+         width: 80%;
+         height:5rem ;
+         border-radius: 2rem;
+         text-decoration: none;
+         @include flex-columna;
+         @include textos;
+         font-weight: 700;
+         margin: 1rem;
+     }
+
+ @media (min-width: $desktop){
+    .contenedor_paquetes{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+    
+    .paquete{
+        width: 30%;
+        justify-content: space-between;
+    }
+    
+ }

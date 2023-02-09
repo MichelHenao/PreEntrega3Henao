@@ -1,0 +1,125 @@
+
+
+#our_team,
+.equipo{
+    padding: $espaciomedio;
+    @include flex-columna;
+}
+
+.pag-equipo{
+    background-color: $colorequipo ;
+}
+
+.sf-team .text-col {
+    float: left;
+    width: 100%;
+    padding: 5rem 2rem;
+    border: 1px solid white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center; 
+	background:#8ed1fc ; 
+
+}
+
+.sf-team .thumb a img{
+	width:100%;
+    border-radius: 50%;
+    padding: 2rem;
+}
+
+.sf-team:hover .text-col{
+	border: 1px solid rgba(0,0,0,0);
+	transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in; 
+ } 
+.sf-team:hover .thumb img {
+    opacity: 0.6;
+	transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+.text-col h3 {
+	font-family: $fuenteestilo;
+	font-size:3rem;
+}
+
+.text-col p {
+    font-family: $fuenteprincipal;
+	font-size:1.5rem;
+}
+
+.sf-team:hover .team-social {
+    border-color: #fff;
+	transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+.team-social {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    list-style: none;
+    border-top: 1px solid;
+}
+
+.team-social li {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+
+.team-social li a {
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 32px;
+    border: 1px solid white;
+    border-radius: 100%;
+    color: #222;
+    font-size: 10rem;
+    display: block;
+}
+
+// .equipo{
+//     align-items: center;
+//     padding: 5rem;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content:center ;
+// }
+
+.title {
+    @include titulos;
+    padding-bottom: 2rem;
+}
+
+.title-caption-equipo{
+    padding: 5rem;
+    font-size:2rem;
+    text-align: justify;
+}
+
+
+.im-equipo{
+    border-radius: 100%;
+    
+}
+
+
+.equipo img {
+    width:100%;
+    border-radius: 50%;
+    padding: 2rem;
+}

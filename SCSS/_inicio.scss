@@ -1,0 +1,249 @@
+.menu__nav {
+  list-style: none;
+  display: flex;
+  gap: $espaciogap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__nav li a {
+  text-decoration: none;
+  color: $colorletra2;
+  font-size:$tamanolistas ;
+  text-align: $alineaciontitulos;
+  font-family:$fuenteprincipal;
+  text-transform: uppercase;
+}
+ .neon-line {
+   position: relative;
+   display: inline-block;
+ }
+ .neon-line:after {
+   content: "";
+   position: absolute;
+   bottom: -2px;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background-color: $colorneon;
+   animation: neon-effect 1s ease-in-out infinite;
+ }
+ @keyframes neon-effect {
+   0% {
+     transform: scale(1);
+   }
+   20% {
+     transform: scale(1.5);
+   }
+   100% {
+     transform: scale(1);
+   }
+ }
+
+ .logo{ 
+  width: 20rem;
+  height: 18rem;
+ }
+
+ .frase {
+   color:$colorletra2;
+   font-size: $tamanotitulos;
+   text-align: $alineaciontitulos;
+   padding-top:$espaciomedio;
+   font-family: $fuenteestilo;
+
+       color: #ffffff; /* color de letra */
+       text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000; /* sombra */
+    
+  
+ }
+
+ .frase_blanca{
+   color: white;
+   font-size: 3rem;
+   text-align: center;
+   padding-bottom: 5rem;
+   font-family: 'Lato', sans-serif;
+ 
+ }
+
+
+
+ .contacto_inicio{
+   color: white;
+   font-size: 2rem;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+     a{
+       text-decoration: none;
+     }
+   }
+
+
+ .linea {
+     border-top: 1px solid $colorletra2;
+     height: $espacioxchico;
+     max-width: 50%;
+     padding: $espaciochico;
+     margin: $espaciochico auto 0 auto;
+   }
+
+ .redes{
+     width: 5rem;
+     height: 5rem;
+     padding: $espaciochico;
+ }
+
+
+ /* estilos para pantallas grandes  */
+ @media (min-width:$tablet) {
+    .menu__nav {
+     display: flex;
+     flex-direction: row;
+   }
+     .logo{
+          width: 30rem;
+         height: 28rem;  
+     } 
+
+     header{
+         @include responsiv;
+      flex-direction: row-reverse ;
+      justify-content: space-around;
+    
+     }
+  
+  
+
+  .contacto_inicio{
+      flex-direction: row ;
+      justify-content: space-around;
+
+  }
+ }
+
+
+ /*ESTILOS DE las secciones*/
+
+ .grid-container, .grid-container-reverse{
+     grid-template-columns: 100%;
+     justify-items: $alineaciontextos;
+     align-items: center;
+     @include textos
+   }
+   .grid-item-image{
+     grid-column: 1/2;
+     opacity: 0.7;
+   }
+
+   .img-in{
+     width: 30rem;
+     height: 30rem;
+   }
+
+   .grid-item-text{
+       grid-column: 1/2;
+       padding-bottom: 5rem;
+     padding-top: 5rem;
+   }
+
+   .grid-item-text-reverse{
+     padding-bottom: $espaciomedio;
+     padding-top: $espaciomedio;
+   }
+
+   .grid-item-image-reverse{
+     opacity: 0.7;
+   }
+
+   @media (min-width: $tablet) {
+     .grid-container {
+         display: grid;
+         grid-template-columns: 50% 50%;
+       }
+    
+     .grid-container-reverse{
+         display: grid;
+         grid-template-columns: 50% 50%;
+     }
+
+     .grid-item-image-reverse{
+         width:auto;
+         height: auto;}
+
+     .img-in{
+             width: 55rem;
+             height: 58rem;
+           }
+   }
+    
+
+ .grid-item-text-reverse:nth-of-type(2) {
+         order:-1 ;
+     }
+
+
+ .grid-item-image{
+   grid-column: 1 / 2;
+   width: auto; 
+   height: auto;
+ }
+
+ .grid-item-text{
+   grid-column: 2 / 3;
+
+ }  
+
+ .img-menu{
+   background: $colormenu;
+ }
+
+ .img-ubicacion{
+   background:$colorfavoritos;
+ }
+
+ .img-reseñas{
+   background:$colorcontacto;
+ }
+
+ .img-equipo-inicio{
+   background:$colorequipo ;
+ }
+
+ .Footer {
+   background-color:$colorheder;
+   display: flex;
+   align-items:center;
+   justify-content:space-around;
+   flex-direction: row;
+   gap: $espaciogap;
+   padding: 1.5rem;
+   color: white;
+   font-size: 1rem;
+   }
+    
+   .img__redes {
+
+       width:3rem;
+       height: 3rem;
+       margin: 3rem;
+       align-items: center;
+   }
+    
+   @media (min-width: $tablet) {
+     .Footer {
+       justify-content:space-around;
+       font-size: 2rem;
+       }
+        
+       .img__redes {
+           justify-content: center;
+           display: flex;
+           align-items: center;
+           flex-direction: row;
+           width: 10rem;
+           height: 10rem;}
+
+        
+        }
+       

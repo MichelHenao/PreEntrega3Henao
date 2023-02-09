@@ -1,0 +1,56 @@
+
+.pag-menu{
+    background-color:$colormenu ;
+  }
+
+#menu{
+    padding:$espaciomedio;
+    @include flex-columna;
+    text-align: center;
+
+}
+
+.titulo-menu{ 
+display: flex;
+@include titulos;
+padding-bottom: $espaciogrande;
+}
+
+
+.offer-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: $espaciomedio;
+}
+
+.offer-item img {
+    width: 25%;
+    float: left;
+    padding:$espacioxchico;
+    background:white ;
+	border-radius: 50%;
+}
+.offer-item .offer-price {
+    position: absolute;
+    right: 1rem;
+    top: 60%;
+    display: block;
+    transform: translate(0%, -50%);
+    letter-spacing: .5px; 
+    @include textos;
+} 
+.offer-item div h3 {
+    font-size: 2.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 2rem;
+}
+    
+ 
+.offer-item div p {
+    text-align: justify;
+    padding-right:8rem;
+    margin: $espaciochico;
+    
+
+
+}
