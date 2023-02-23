@@ -217,7 +217,7 @@
    justify-content:space-around;
    flex-direction: row;
    gap: $espaciogap;
-   padding: 1.5rem;
+   padding: 1rem;
    color: white;
    font-size: 1rem;
    }
@@ -233,7 +233,7 @@
    @media (min-width: $tablet) {
      .Footer {
        justify-content:space-around;
-       font-size: 2rem;
+       font-size: 1.5rem;
        }
         
        .img__redes {

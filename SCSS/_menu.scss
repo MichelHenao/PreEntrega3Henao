@@ -47,10 +47,23 @@ padding-bottom: $espaciogrande;
     
  
 .offer-item div p {
-    text-align: justify;
+    text-align: center;
     padding-right:8rem;
     margin: $espaciochico;
-    
+}
 
+    @media (Max-width:768px){
+        .offer-item img {
+            width: 100%;
+        }
 
+        .offer-item .offer-price {
+            position: absolute;
+            right: 1rem;
+            top: 80%;
+            display: block;
+            transform: translate(0%, -50%);
+            letter-spacing: .5px; 
+            @include textos;
+        }
 }

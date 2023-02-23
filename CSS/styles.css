@@ -160,7 +160,7 @@ button:hover {
   justify-items: justify;
   align-items: center;
   color: black;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   font-family: "Lato", sans-serif;
 }
@@ -245,7 +245,7 @@ button:hover {
   justify-content: space-around;
   flex-direction: row;
   gap: 2rem;
-  padding: 1.5rem;
+  padding: 1rem;
   color: white;
   font-size: 1rem;
 }
@@ -260,7 +260,7 @@ button:hover {
 @media (min-width: 768px) {
   .Footer {
     justify-content: space-around;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .img__redes {
     justify-content: center;
@@ -315,7 +315,7 @@ button:hover {
   transform: translate(0%, -50%);
   letter-spacing: 0.5px;
   color: black;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   font-family: "Lato", sans-serif;
 }
@@ -327,11 +327,28 @@ button:hover {
 }
 
 .offer-item div p {
-  text-align: justify;
+  text-align: center;
   padding-right: 8rem;
   margin: 20px;
 }
 
+@media (Max-width: 768px) {
+  .offer-item img {
+    width: 100%;
+  }
+  .offer-item .offer-price {
+    position: absolute;
+    right: 1rem;
+    top: 80%;
+    display: block;
+    transform: translate(0%, -50%);
+    letter-spacing: 0.5px;
+    color: black;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  }
+}
 #our_team,
 .equipo {
   padding: 40px;
@@ -389,6 +406,7 @@ button:hover {
 .text-col p {
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
+  text-align: justify;
 }
 
 .sf-team:hover .team-social {
@@ -502,7 +520,7 @@ button:hover {
 
 .paquete p {
   color: black;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   font-family: "Lato", sans-serif;
 }
@@ -518,10 +536,10 @@ button:hover {
   align-items: center;
   justify-content: center;
   color: black;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-weight: 400px;
   margin: 1rem;
 }
 
@@ -534,7 +552,12 @@ button:hover {
   }
   .paquete {
     width: 30%;
+    height: 700px;
     justify-content: space-between;
+  }
+  .paquete img {
+    width: 100%;
+    height: 300px;
   }
 }
 .contenedor-contacto {
