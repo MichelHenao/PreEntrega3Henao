@@ -37,8 +37,8 @@ $espaciogap: 2rem;
 $fuenteprincipal:'Lato', sans-serif;
 $fuenteestilo: 'Barlow Condensed', sans-serif;
 $tamanotitulos:8rem;
-$tamanotexto:2rem;
-$tamanolistas:1.5rem;
+$tamanotexto:1.5rem;
+$tamanolistas:1rem;
 $alineaciontitulos:center;
 $alineaciontextos: justify;
 
@@ -49,13 +49,13 @@ $alineaciontextos: justify;
 
 @mixin textos{
     color: black;
-    font-size: 1.8rem;
+    font-size: 1rem;
     text-align: center;
     font-family:'Lato', sans-serif ;
 }
 @mixin titulos{
     color: black;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif ;
 }
